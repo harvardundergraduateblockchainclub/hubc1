@@ -462,7 +462,7 @@ export default function App() {
         <section className="hubc-pad" style={{ padding: '160px 56px 120px' }}>
           <div style={{ maxWidth: 1240, margin: '0 auto' }}>
             <div style={{ fontFamily: MONO, fontSize: 12, letterSpacing: '0.18em', textTransform: 'uppercase', color: CRIMSON, marginBottom: 22 }}>Initiatives</div>
-            <h1 style={{ fontFamily: SERIF, fontWeight: 400, fontSize: 'clamp(40px, 6vw, 84px)', lineHeight: 1, letterSpacing: '-0.02em', margin: '0 0 24px' }}>What we're working on</h1>
+            <h1 style={{ fontFamily: SERIF, fontWeight: 400, fontSize: 'clamp(40px, 6vw, 84px)', lineHeight: 1, letterSpacing: '-0.02em', margin: '0 0 24px' }}>Our initiatives</h1>
             <p style={{ fontSize: 17, lineHeight: 1.7, color: 'rgba(23,20,15,0.6)', maxWidth: '52ch', margin: '0 0 72px' }}>
               Research groups, teaching programs, and the events that bring the ecosystem to campus.
             </p>
