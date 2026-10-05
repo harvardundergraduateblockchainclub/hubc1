@@ -420,7 +420,7 @@ export default function App() {
                 Building the future, <em style={{ fontStyle: 'italic', color: CRIMSON }}>block by block.</em>
               </h1>
               <p style={{ fontSize: 18, lineHeight: 1.65, color: 'rgba(23,20,15,0.62)', maxWidth: '46ch', margin: '0 0 40px', animation: 'hubcFadeUp 0.9s ease 0.16s both' }}>
-                A student community in Cambridge researching, building, and shipping on decentralized infrastructure — from protocol design to real deployments.
+                Harvard College's student-led organization researching, building, and shipping on decentralized infrastructure.
               </p>
               <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', animation: 'hubcFadeUp 0.9s ease 0.24s both' }}>
                 <a className="hubc-btn-dark" onClick={go('initiatives')} style={{ fontFamily: MONO, fontSize: 12, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '15px 26px', background: INK, color: PAPER, borderRadius: 2, cursor: 'pointer', transition: 'background 0.25s ease' }}>
@@ -494,7 +494,7 @@ export default function App() {
         <section className="hubc-pad" style={{ padding: '160px 56px 120px' }}>
           <div style={{ maxWidth: 1240, margin: '0 auto' }}>
             <div style={{ fontFamily: MONO, fontSize: 12, letterSpacing: '0.18em', textTransform: 'uppercase', color: CRIMSON, marginBottom: 22 }}>Team</div>
-            <h1 style={{ fontFamily: SERIF, fontWeight: 400, fontSize: 'clamp(40px, 6vw, 84px)', lineHeight: 1, letterSpacing: '-0.02em', margin: '0 0 24px' }}>Who runs the club</h1>
+            <h1 style={{ fontFamily: SERIF, fontWeight: 400, fontSize: 'clamp(40px, 6vw, 84px)', lineHeight: 1, letterSpacing: '-0.02em', margin: '0 0 24px' }}>Executive Leadership</h1>
             <p style={{ fontSize: 17, lineHeight: 1.7, color: 'rgba(23,20,15,0.6)', maxWidth: '52ch', margin: '0 0 72px' }}>
               Builders, researchers, and organizers from across the College — with faculty support from SEAS.
             </p>
