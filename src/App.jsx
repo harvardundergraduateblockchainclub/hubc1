@@ -501,8 +501,8 @@ export default function App() {
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '40px 32px' }}>
               <Person photo="/antonia.jpg" name="Antonia Kolb" role="President · '28" note="Conference Co-Chair" position="center 22%" />
-              <Person photo="/jeff.png" name="Jeff Dai" role="Vice President · '29" position="center 25%" />
-              <Person photo="/matthew.jpeg" name="Matthew Chin" role="Head of Trading · '29" position="center 30%" />
+              <Person photo="/jeff.png" name="Jeff Dai" role="Co-Vice President · '29" position="center 25%" />
+              <Person photo="/matthew.jpeg" name="Matthew Chin" role="Co-Vice President · '29" position="center 30%" />
               <Person photo="/anton.jpeg" name="Anton Wagner" role="Head of Markets · '29" position="center 25%" />
               <Person photo="/sasha.jpg" name="Sasha Minsky" role="Head of Growth · '28" />
               <Person photo="/tyler.jpeg" name="Tyler Dang" role="Operations Director · '28" position="center 25%" />
