@@ -420,7 +420,7 @@ export default function App() {
                 Building the future, <em style={{ fontStyle: 'italic', color: CRIMSON }}>block by block.</em>
               </h1>
               <p style={{ fontSize: 18, lineHeight: 1.65, color: 'rgba(23,20,15,0.62)', maxWidth: '46ch', margin: '0 0 40px', animation: 'hubcFadeUp 0.9s ease 0.16s both' }}>
-                Harvard College's student-led organization researching, building, and shipping on decentralized infrastructure.
+                Harvard undergraduates researching and building blockchain systems. We run workshops, research groups, and an annual summit, and work with protocol teams, funds, and faculty.
               </p>
               <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', animation: 'hubcFadeUp 0.9s ease 0.24s both' }}>
                 <a className="hubc-btn-dark" onClick={go('initiatives')} style={{ fontFamily: MONO, fontSize: 12, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '15px 26px', background: INK, color: PAPER, borderRadius: 2, cursor: 'pointer', transition: 'background 0.25s ease' }}>
@@ -494,7 +494,7 @@ export default function App() {
         <section className="hubc-pad" style={{ padding: '160px 56px 120px' }}>
           <div style={{ maxWidth: 1240, margin: '0 auto' }}>
             <div style={{ fontFamily: MONO, fontSize: 12, letterSpacing: '0.18em', textTransform: 'uppercase', color: CRIMSON, marginBottom: 22 }}>Team</div>
-            <h1 style={{ fontFamily: SERIF, fontWeight: 400, fontSize: 'clamp(40px, 6vw, 84px)', lineHeight: 1, letterSpacing: '-0.02em', margin: '0 0 24px' }}>Executive Leadership</h1>
+            <h1 style={{ fontFamily: SERIF, fontWeight: 400, fontSize: 'clamp(40px, 6vw, 84px)', lineHeight: 1, letterSpacing: '-0.02em', margin: '0 0 24px' }}>Who runs the club</h1>
             <p style={{ fontSize: 17, lineHeight: 1.7, color: 'rgba(23,20,15,0.6)', maxWidth: '52ch', margin: '0 0 72px' }}>
               Builders, researchers, and organizers from across the College — with faculty support from SEAS.
             </p>
@@ -503,10 +503,11 @@ export default function App() {
               <Person photo="/antonia.jpg" name="Antonia Kolb" role="President · '28" note="Conference Co-Chair" position="center 22%" />
               <Person photo="/jeff.png" name="Jeff Dai" role="Co-Vice President · '29" position="center 25%" />
               <Person photo="/matthew.jpeg" name="Matthew Chin" role="Co-Vice President · '29" position="center 30%" />
+              <Person photo="/daniel.jpeg" name="Daniel Choi" role="Head of Trading · '29" position="center 30%" />
+              <Person photo="/will.jpeg" name="Will Brunner" role="Operations Director · '28" note="Conference Co-Chair" />
               <Person photo="/anton.jpeg" name="Anton Wagner" role="Head of Markets · '29" position="center 25%" />
               <Person photo="/sasha.jpg" name="Sasha Minsky" role="Head of Growth · '28" />
-              <Person photo="/tyler.jpeg" name="Tyler Dang" role="Operations Director · '28" position="center 25%" />
-              <Person photo="/will.jpeg" name="Will Brunner" role="Marketing & Communications · '28" note="Conference Co-Chair" />
+              <Person photo="/tyler.jpeg" name="Tyler Dang" role="Head of Partnerships · '28" position="center 25%" />
               <Person photo="/david.jpeg" name="David Parkes" role="Faculty Advisor" note="John A. Paulson Dean, Harvard SEAS" position="center 25%" />
             </div>
 
