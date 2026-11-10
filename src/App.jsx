@@ -350,6 +350,8 @@ export default function App() {
         .hubc-portrait:hover { filter: grayscale(0); transform: scale(1.02); }
         .hubc-social { transition: color 0.25s ease, border-color 0.25s ease, transform 0.25s cubic-bezier(.2,.8,.25,1); }
         .hubc-social:hover { color: ${CRIMSON} !important; border-color: ${CRIMSON}; transform: translateY(-2px); }
+        .hubc-banner { transition: background 0.3s ease, gap 0.3s ease; }
+        .hubc-banner:hover { background: ${CRIMSON} !important; color: #fff !important; gap: 16px !important; }
         .hubc-logo { transition: height 0.35s cubic-bezier(.2,.8,.25,1), opacity 0.25s ease; }
         .hubc-logo:hover { opacity: 0.7; }
         @media (prefers-reduced-motion: reduce) {
@@ -363,10 +365,27 @@ export default function App() {
         }
       `}</style>
 
+      <a
+        className="hubc-banner"
+        href="https://blockchainaisummit.org"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          position: 'fixed', top: 0, left: 0, right: 0, zIndex: 101, height: 40,
+          display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, padding: '0 20px',
+          background: INK, color: PAPER, fontFamily: MONO, fontSize: 11, letterSpacing: '0.1em',
+          textTransform: 'uppercase', whiteSpace: 'nowrap', overflow: 'hidden',
+        }}
+      >
+        <span style={{ width: 6, height: 6, background: CRIMSON, flex: '0 0 auto' }} />
+        <span style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>See the recap of the 2026 Blockchain and AI Summit at Harvard</span>
+        <span style={{ flex: '0 0 auto' }}>→</span>
+      </a>
+
       <nav
         className="hubc-nav"
         style={{
-          position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
+          position: 'fixed', top: 40, left: 0, right: 0, zIndex: 100,
           display: 'flex', alignItems: 'center', justifyContent: 'space-between',
           padding: `${scrollY > 40 ? 12 : 18}px 56px`, background: 'rgba(250,250,248,0.82)',
           backdropFilter: 'blur(18px)', WebkitBackdropFilter: 'blur(18px)',
@@ -420,7 +439,7 @@ export default function App() {
                 Building the future, <em style={{ fontStyle: 'italic', color: CRIMSON }}>block by block.</em>
               </h1>
               <p style={{ fontSize: 18, lineHeight: 1.65, color: 'rgba(23,20,15,0.62)', maxWidth: '46ch', margin: '0 0 40px', animation: 'hubcFadeUp 0.9s ease 0.16s both' }}>
-                Harvard College's student-led organization researching, building, and shipping on decentralized infrastructure.
+                Harvard undergraduates researching and building blockchain systems. We run workshops, research groups, and an annual summit, and work with protocol teams, funds, and faculty.
               </p>
               <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', animation: 'hubcFadeUp 0.9s ease 0.24s both' }}>
                 <a className="hubc-btn-dark" onClick={go('initiatives')} style={{ fontFamily: MONO, fontSize: 12, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '15px 26px', background: INK, color: PAPER, borderRadius: 2, cursor: 'pointer', transition: 'background 0.25s ease' }}>
@@ -494,20 +513,18 @@ export default function App() {
         <section className="hubc-pad" style={{ padding: '160px 56px 120px' }}>
           <div style={{ maxWidth: 1240, margin: '0 auto' }}>
             <div style={{ fontFamily: MONO, fontSize: 12, letterSpacing: '0.18em', textTransform: 'uppercase', color: CRIMSON, marginBottom: 22 }}>Team</div>
-            <h1 style={{ fontFamily: SERIF, fontWeight: 400, fontSize: 'clamp(40px, 6vw, 84px)', lineHeight: 1, letterSpacing: '-0.02em', margin: '0 0 24px' }}>Executive leadership</h1>
+            <h1 style={{ fontFamily: SERIF, fontWeight: 400, fontSize: 'clamp(40px, 6vw, 84px)', lineHeight: 1, letterSpacing: '-0.02em', margin: '0 0 24px' }}>Who runs the club</h1>
             <p style={{ fontSize: 17, lineHeight: 1.7, color: 'rgba(23,20,15,0.6)', maxWidth: '52ch', margin: '0 0 72px' }}>
               Builders, researchers, and organizers from across the College — with faculty support from SEAS.
             </p>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '40px 32px' }}>
               <Person photo="/antonia.jpg" name="Antonia Kolb" role="President · '28" note="Conference Co-Chair" position="center 22%" />
+              <Person photo="/will.jpeg" name="Will Brunner" role="Co-Vice President · '28" note="Conference Co-Chair" />
               <Person photo="/jeff.png" name="Jeff Dai" role="Co-Vice President · '29" position="center 25%" />
               <Person photo="/matthew.jpeg" name="Matthew Chin" role="Co-Vice President · '29" position="center 30%" />
               <Person photo="/daniel.jpeg" name="Daniel Choi" role="Head of Trading · '29" position="center 30%" />
-              <Person photo="/will.jpeg" name="Will Brunner" role="Operations Director · '28" note="Conference Co-Chair" />
               <Person photo="/anton.jpeg" name="Anton Wagner" role="Head of Markets · '29" position="center 25%" />
-              <Person photo="/sasha.jpg" name="Sasha Minsky" role="Head of Growth · '28" />
-              <Person photo="/tyler.jpeg" name="Tyler Dang" role="Head of Partnerships · '28" position="center 25%" />
               <Person photo="/david.jpeg" name="David Parkes" role="Faculty Advisor" note="John A. Paulson Dean, Harvard SEAS" position="center 25%" />
             </div>
 
